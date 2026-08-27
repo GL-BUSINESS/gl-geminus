@@ -1,0 +1,142 @@
+/**
+ * Design tokens — GL Capital
+ * Extraidos por inspecao do site de referencia (computed styles via Playwright).
+ * Toda cor, espacamento, raio e escala tipografica do projeto deve sair daqui.
+ */
+
+:root {
+  /* ---------- Paleta bruta ---------- */
+  --c-white: #ffffff;
+  --c-c1: #f1f6ff; /* superficie clara / navbar */
+  --c-c2: #ebf0f9; /* superficie clara alternativa / texto sobre escuro */
+  --c-c3: #a3acbf; /* texto secundario sobre escuro */
+  --c-c4: #505c73;
+  --c-c5: #20252e;
+  --c-c6: #161a22; /* superficie do rodape */
+  --c-c7: #050608; /* fundo escuro principal */
+  --c-c8: #115cf2; /* azul hover */
+  --c-c9: #0040bf; /* azul active */
+  --c-c10: #044bd8; /* azul de marca */
+  --c-c11: #16be48; /* sucesso */
+  --c-c12: #dd3333; /* alerta */
+  --c-c13: #8098c9; /* azul acinzentado (subtitulo do hero) */
+  --c-black: #000000;
+
+  /* ---------- Papeis semanticos ---------- */
+  --color-bg: var(--c-c7);
+  --color-bg-light: var(--c-c2);
+  --color-surface: var(--c-c1);
+  --color-surface-dark: var(--c-c6);
+  --color-surface-black: var(--c-black);
+
+  --color-text-primary: var(--c-black);
+  --color-text-primary-inverse: var(--c-c2);
+  --color-text-secondary: var(--c-c3);
+  --color-text-muted: var(--c-c13);
+
+  --color-accent: var(--c-c10);
+  --color-accent-hover: var(--c-c8);
+  --color-accent-active: var(--c-c9);
+  --color-on-accent: var(--c-c2);
+
+  --color-success: var(--c-c11);
+  --color-danger: var(--c-c12);
+  --color-warning: #d98e04;
+
+  --color-border: var(--c-black);
+  --color-border-subtle: rgba(163, 172, 191, 0.35);
+  --color-focus-ring: var(--c-c8);
+
+  /* ---------- Tipografia ---------- */
+  --font-sans: "DM Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --fs-display: 90px; /* titulo do hero (desktop) */
+  --fs-display-sm: 50px; /* titulo do hero (mobile) */
+  --fs-h1: 48px;
+  --fs-h1-sm: 30px;
+  --fs-h2: 32px;
+  --fs-h3: 24px;
+  --fs-lead: 20px; /* corpo destacado */
+  --fs-body: 16px;
+  --fs-sm: 13px;
+
+  --lh-display: 72px;
+  --lh-display-sm: 40px;
+  --lh-heading: 72px;
+  --lh-heading-sm: 45px;
+  --lh-body: 28px;
+  --lh-tight: 16px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---------- Espacamento (escala de 4) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 25px;
+  --space-7: 30px;
+  --space-8: 40px;
+  --space-9: 50px;
+  --space-10: 72px;
+  --space-11: 100px;
+  --space-12: 144px;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1296px; /* area util em 1440 (1440 - 72*2) */
+  --content-max: 1037px; /* largura do conteudo das secoes centralizadas */
+  --section-padding-y: var(--space-10);
+  --section-padding-x: var(--space-10);
+  --navbar-height: 81px;
+  --navbar-height-sm: 83px;
+
+  /* ---------- Formas ---------- */
+  --radius-sm: 1px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  --border-width: 2px;
+
+  --shadow-sm: 0 1px 2px rgba(5, 6, 8, 0.08);
+  --shadow-md: 0 4px 16px rgba(5, 6, 8, 0.12);
+  --shadow-lg: 0 12px 40px rgba(5, 6, 8, 0.24);
+
+  /* ---------- Componentes ---------- */
+  --btn-height: 50px;
+  --btn-padding-x: var(--space-5);
+  --input-height: 50px;
+
+  /* ---------- Movimento ---------- */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+}
+
+/* Escala tipografica reduzida em telas pequenas.
+   Os componentes usam sempre as variaveis, entao basta redefinir aqui. */
+@media (max-width: 767px) {
+  :root {
+    --fs-display: var(--fs-display-sm);
+    --lh-display: var(--lh-display-sm);
+    --fs-h1: var(--fs-h1-sm);
+    --lh-heading: var(--lh-heading-sm);
+    --section-padding-x: var(--space-5);
+    --section-padding-y: var(--space-10);
+  }
+}
+
+/* Peso extra usado apenas no titulo do hero. */
+:root {
+  --fw-black: 900;
+}
+
+/* Escala fixa: nao encolhe no mobile. Usada onde a referencia mantem o
+   tamanho grande independente da largura (titulo do bloco de contato). */
+:root {
+  --fs-h1-fixed: 48px;
+  --lh-heading-fixed: 72px;
+}
