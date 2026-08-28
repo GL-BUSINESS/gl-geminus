@@ -11,7 +11,6 @@ export const contact = {
   // `phone` e o texto exibido; `phoneDigits` alimenta o link tel:.
   phone: '+55 (47) 99911-0213',
   phoneDigits: '+5547999110213',
-  email: 'gustavo@glcapital.com.br',
   addressLines: [
     'Rua Dos Pioneiros, 220 - Centro Sala 2',
     'Rio do Sul, Santa Catarina 89160063',

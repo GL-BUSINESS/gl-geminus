@@ -67,8 +67,7 @@ secao mais nitida.
 
 O texto da pagina de politica de privacidade e placeholder: a estrutura, a
 tipografia e o espacamento estao prontos, o conteudo juridico precisa ser
-inserido antes de publicar. O e-mail em `src/data/site.js` (`contact.email`)
-tambem segue como exemplo.
+inserido antes de publicar.
 
 ## Acessibilidade
 

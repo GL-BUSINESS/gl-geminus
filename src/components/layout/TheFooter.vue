@@ -37,13 +37,6 @@ const telHref = computed(() => `tel:${contact.phoneDigits}`)
           </p>
         </div>
 
-        <div class="footer__block">
-          <h3 class="footer__label">E-mail</h3>
-          <p class="footer__value">
-            <a class="footer__link" :href="`mailto:${contact.email}`">{{ contact.email }}</a>
-          </p>
-        </div>
-
         <hr class="footer__rule" />
 
         <div class="footer__legal">
