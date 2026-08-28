@@ -103,7 +103,12 @@ import { advantages } from '../../data/site'
   .advantages__item:nth-child(3) { grid-column: 1; grid-row: 3; }
   .advantages__item:nth-child(4) { grid-column: 2; grid-row: 4; }
 
+  /* Bloco, e nao flex: como item flex o paragrafo encolhe ate o texto e
+     o text-align nao tem o que centralizar — a linha curta do item 1
+     ficava colada a esquerda em vez de centrada na coluna.
+     O marcador some aqui, entao o flex nao faz falta. */
   .advantages__item {
+    display: block;
     text-align: center;
   }
 
