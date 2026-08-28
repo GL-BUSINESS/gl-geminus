@@ -1,13 +1,13 @@
 <script setup>
 import photo from '../../assets/img/gl-fachadadaempresa-C3ukrhig.webp'
 import SectionHeading from '../ui/SectionHeading.vue'
-import { about } from '../../data/site'
+import { about, brand } from '../../data/site'
 </script>
 
 <template>
   <section class="about">
     <div class="about__content">
-      <SectionHeading level="h2" tone="dark">GL Capital: {{ about.title }}</SectionHeading>
+      <SectionHeading level="h2" tone="dark">{{ brand }}: {{ about.title }}</SectionHeading>
       <p class="about__text">{{ about.text }}</p>
     </div>
 

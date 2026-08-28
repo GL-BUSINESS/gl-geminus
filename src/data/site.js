@@ -4,6 +4,9 @@
  * trocar copy ou dados de contato nao exige mexer em componente.
  */
 
+/** Nome da marca exibido nos textos da pagina. */
+export const brand = 'Gl Exponencial'
+
 export const contact = {
   // `phone` e o texto exibido; `phoneDigits` alimenta o link tel:.
   phone: '+55 (47) 99911-0213',

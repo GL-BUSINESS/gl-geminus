@@ -1,6 +1,6 @@
 # gl-geminus
 
-Landing page GL Capital — Vue 3 + Vite.
+Landing page Gl Exponencial — Vue 3 + Vite.
 
 ## Rodando
 
@@ -52,12 +52,14 @@ As imagens e o logotipo em `src/assets/img/` foram fornecidos:
 
 | Arquivo | Onde aparece |
 |---|---|
-| `logo_gl.svg` | Navbar (130x40, renderizado a 100x31) |
+| `icon_gl_exponencial.svg` | Navbar (855x855, renderizado a 40x40) |
+| `public/icon_gl_exponencial.svg` | Favicon / icone da aba |
 | `banner-DMmhqFDB.webp` | Banner do topo (916x450) |
 | `person-giving-little-house-to-another-CTUW5DDB.webp` | Secao "O que e Home Equity" (652x454) |
 | `gl-fachadadaempresa-C3ukrhig.webp` | Secao institucional (430x357) |
 | `setas-pontilhadas-2Ey7Wu8G.webp` | Setas do zigue-zague em "Vantagens" (345x448, exibida a 308x400) |
 | `icon-chat.svg` | Icone de contato da navbar mobile — **ainda placeholder** |
+| `logo_gl.svg` | **Sem uso.** Wordmark antigo ("CAPITAL"), mantido para facilitar reverter a navbar |
 
 Nota: `gl-fachadadaempresa` (430x357) e exibida em um espaco de 720x598 no
 desktop, ou seja, ampliada ~1,7x. Uma versao em resolucao maior deixaria a

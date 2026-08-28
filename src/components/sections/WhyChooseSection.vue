@@ -2,13 +2,13 @@
 import BaseSection from '../ui/BaseSection.vue'
 import SectionHeading from '../ui/SectionHeading.vue'
 import ReasonCard from '../ui/ReasonCard.vue'
-import { reasons } from '../../data/site'
+import { reasons, brand } from '../../data/site'
 </script>
 
 <template>
   <BaseSection tone="light" width="content">
     <SectionHeading level="h2" align="center" tone="light">
-      Por que escolher a GL Capital?
+      Por que escolher a {{ brand }}?
     </SectionHeading>
 
     <ul class="reasons">

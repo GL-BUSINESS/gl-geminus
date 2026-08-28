@@ -38,7 +38,7 @@ const sections = [
     heading: 'Mais informações',
     paragraphs: [
       'Oriente o usuário sobre como proceder em caso de dúvida e informe o canal oficial de contato do encarregado de dados.',
-      'Esta política é efetiva a partir de [data].',
+      'Esta política é efetiva a partir de 18 de março de 2024, às 13:52.',
     ],
   },
 ]

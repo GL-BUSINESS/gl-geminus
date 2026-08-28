@@ -1,14 +1,20 @@
 <script setup>
-import logo from '../../assets/img/logo_gl.svg'
+import logo from '../../assets/img/icon_gl_exponencial.svg'
 import chatIcon from '../../assets/img/icon-chat.svg'
-import { whatsappUrl } from '../../data/site'
+import { brand, whatsappUrl } from '../../data/site'
 </script>
 
 <template>
   <header class="navbar">
     <nav class="navbar__inner" aria-label="Principal">
       <router-link to="/" class="navbar__brand">
-        <img :src="logo" class="navbar__logo" alt="GL Exponencial — página inicial" width="130" height="40" />
+        <img
+          :src="logo"
+          class="navbar__logo"
+          :alt="`${brand} — página inicial`"
+          width="855"
+          height="855"
+        />
       </router-link>
 
       <!-- Desktop: rotulo textual. Mobile: icone com nome acessivel. -->
@@ -60,9 +66,10 @@ import { whatsappUrl } from '../../data/site'
   align-items: center;
 }
 
+/* Marca quadrada: 40px equilibra o peso visual dentro da barra de 81px. */
 .navbar__logo {
-  width: 100px;
-  height: auto;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar__cta {
