@@ -29,12 +29,14 @@ import { reasons, brand } from '../../data/site'
 }
 
 @media (min-width: 768px) {
-  /* 306px por card com 40px de respiro — a mesma medida da referencia.
-     minmax deixa encolher entre 768px e 1037px. */
+  /* Tres colunas iguais, 40px entre elas e 20px de recuo nas bordas.
+     Em fracoes, e nao em 306px fixos, os cards acompanham a secao: dao
+     306px quando ela mede 1037 e 417px quando mede 1372 — as duas
+     medidas da referencia. */
   .reasons {
-    grid-template-columns: repeat(3, minmax(0, 306px));
-    justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-8);
+    padding-inline: var(--space-5);
   }
 }
 </style>

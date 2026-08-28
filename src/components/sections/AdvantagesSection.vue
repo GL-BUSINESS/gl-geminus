@@ -79,29 +79,31 @@ import { advantages } from '../../data/site'
   /* 308x400 e o tamanho em que a arte foi desenhada; a ponta de cada seta
      cai entre duas linhas da lista. Por isso o gap de 54px e o recuo de
      -18px sao fixos: mudar um desalinha as setas do texto. */
+  /* A arte tem tamanho fixo e fica a 35% da largura do bloco — nao
+     centrada. Em telas largas o bloco cresce e o centro se afasta das
+     pontas das setas; os 35% mantem o encaixe em qualquer largura. */
   .advantages__arrows {
     display: block;
     position: absolute;
     top: -18px;
-    left: 50%;
+    left: 35%;
     width: 308px;
     height: 400px;
-    transform: translateX(-50%);
     pointer-events: none;
   }
 
   .advantages__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: var(--space-8);
+    grid-template-columns: 1fr;
     row-gap: 54px;
   }
 
-  /* Zigue-zague: itens impares na coluna da esquerda, pares na direita,
-     cada um deslocado uma linha para baixo do anterior. */
-  .advantages__item:nth-child(1) { grid-column: 1; grid-row: 1; }
-  .advantages__item:nth-child(2) { grid-column: 2; grid-row: 2; }
-  .advantages__item:nth-child(3) { grid-column: 1; grid-row: 3; }
-  .advantages__item:nth-child(4) { grid-column: 2; grid-row: 4; }
+  /* Zigue-zague em porcentagem, como na referencia: a largura e o recuo
+     de cada item colocam o texto centrado a 27,5% / 75% / 25% / 75% do
+     bloco. Assim o desenho acompanha a tela em vez de descolar. */
+  .advantages__item:nth-child(1) { grid-row: 1; width: 45%; padding-left: 10%; }
+  .advantages__item:nth-child(2) { grid-row: 2; width: 100%; padding-left: 50%; }
+  .advantages__item:nth-child(3) { grid-row: 3; width: 50%; }
+  .advantages__item:nth-child(4) { grid-row: 4; width: 100%; padding-left: 50%; }
 
   /* Bloco, e nao flex: como item flex o paragrafo encolhe ate o texto e
      o text-align nao tem o que centralizar — a linha curta do item 1

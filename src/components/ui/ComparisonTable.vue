@@ -55,8 +55,12 @@ defineProps({
   overflow-x: auto;
 }
 
+/* Ao contrario dos cards, a tabela para de crescer: na referencia ela e
+   dimensionada pelo conteudo e estabiliza em ~1051px. Sem o teto, numa
+   secao de 1372px as celulas ficariam com folga demais. */
 .table {
   width: 100%;
+  max-width: 1051px;
   border-collapse: collapse;
   border: var(--border-width) solid var(--color-border);
 }
